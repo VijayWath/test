@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+    <div class="main">
+      <div class="date"><h1><%= current_date %></h1></div>
+      <div class="list">
+      <% if(newTodo.length == 0){ %>  
+          <h2>No ToDo</h2>
+     <% }else{ %>   
+          <% newTodo.forEach(todo => { %>
+              <input type="checkbox" class="checkbox" />
+               <h2 class="listItem"><%= todo %></h2> 
+          <% }) %>
+      <% } %>  
+         
+
+      </div>
+      <form action="/submit" method="post">
+        <input class="todo" type="text" name="newTodo" id="" />
+        <button class="btn" type="submit">+</button>
+      </form>
+    </div>
+  </body>
+</html>

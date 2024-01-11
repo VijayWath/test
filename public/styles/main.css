@@ -1,0 +1,82 @@
+.body{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.main{
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 30px;
+}
+h1,h2,input{
+    padding: 0;
+    margin: 0;
+}
+.date{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgba(86, 241, 230, 0.696);
+}
+
+.list{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: rgba(86, 241, 230, 0.696);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.checkbox{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.checkbox:checked + .listItem {
+    color: gray;
+  }
+  
+.listItem{
+    background-color: antiquewhite;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+form{
+    text-align: center;
+    background-color: rgba(86, 241, 230, 0.696);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+.todo{
+    border: none;
+    background-color: antiquewhite;
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.btn  {
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    font-size: 2rem;
+    background: #888;
+    color: rgb(0, 0, 0);
+    border-radius:100px ;
+  }
+
+
